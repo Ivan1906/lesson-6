@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { HashRouter, Route } from 'react-router-dom'
-import { Home, About, Events, Products, Contact } from './src/components/pages'
+import { HashRouter, Route } from 'react-router-dom';
+import { Home, About, Events, Products, Contact } from './src/components/pages';
 import './App.css';
 
 class App extends Component {

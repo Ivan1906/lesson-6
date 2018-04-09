@@ -1,3 +1,12 @@
+import { PageTemplate } from './src/components/PageTemplate';
+
+export const Home = () =>
+    <PageTemplate>
+        <section className="home">
+            <h1>[Home Page]</h1>
+        </section>
+    </PageTemplate>
+
 export const Events = () =>
     <PageTemplate>
         <section className="events">
