@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Location = () =>
+const Locations = () =>
     <div>
         <h1>Location</h1>
     </div>
 
-export default Location;    
+export default Locations;    

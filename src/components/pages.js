@@ -1,9 +1,15 @@
 import React from 'react';
-import { Route } from 'react-router-dom'
+import { Route, Switch } from 'react-router-dom'
 import PageTemplate from './PageTemplate';
 import AboutMenu from './AboutMenu';
-import Company from './Pages/Company';
-import Services from './Pages/Services';
+
+import Locations from './Pages/About/Locations';
+import HistoryStory from './Pages/About/HistoryStory';
+import Company from './Pages/About/Company';
+import Services from './Pages/About/Services';
+
+//let { Company, HistoryStory, Services, Locations } = ALL_ABOUT;
+//console.log({ALL_ABOUT});
 
 export const Home = () =>
     <PageTemplate>
@@ -39,11 +45,13 @@ export const About = ({ match }) =>
     <PageTemplate>
         <section className="about">
             <h1>About</h1>
-            <Route component={AboutMenu} />
-            <Route exact path="/about" component={Company}/>
-            <Route path="/about/history" component={History}/>
-            <Route path="/about/services" component={Services}/>
-            <Route path="/about/location" component={Location}/>
+                <Switch>
+                    <Route component={AboutMenu} />
+                    <Route exact path="/about" component={Company}/>
+                    <Route path="/about/history" component={HistoryStory}/>
+                    <Route path="/about/services" component={Services}/>
+                    <Route path="/about/location" component={Locations}/>
+                </Switch>
         </section>
     </PageTemplate>
 
