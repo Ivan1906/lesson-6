@@ -1,19 +1,15 @@
 import React from 'react';
-import { Link, Route } from 'react-router-dom'
+import { Route } from 'react-router-dom'
 import PageTemplate from './PageTemplate';
 import AboutMenu from './AboutMenu';
+import Company from './Pages/Company';
+import Services from './Pages/Services';
 
 export const Home = () =>
     <PageTemplate>
         <section className="home">
             <div className="home">
-                <h1>[Company Website]</h1>
-                    <nav>
-                        <Link to="about">[About]</Link>
-                        <Link to="events">[Events]</Link>
-                        <Link to="products">[Products]</Link>
-                        <Link to="contact">[Contact Us]</Link>
-                    </nav>
+                <h1>[Home]</h1>
             </div>
         </section>
     </PageTemplate>

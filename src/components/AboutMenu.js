@@ -1,7 +1,12 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
+const selectedStyle = {
+    backgroundColor: "green",
+    color: "slategray"
+}
 
-export const AboutMenu = ({match}) =>
+const AboutMenu = ({match}) =>
     <div className="about-menu">
         <li>
             <NavLink to="/about" style={match.isExact && selectedStyle}>
@@ -24,3 +29,5 @@ export const AboutMenu = ({match}) =>
             </NavLink>
         </li>
     </div>
+
+export default AboutMenu;    
