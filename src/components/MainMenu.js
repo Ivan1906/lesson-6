@@ -8,20 +8,20 @@ const selectedStyle = {
 
 const MainMenu = () =>
     <nav className="main-menu">
-        <NavLink to="/">
-            [Home]
+        <NavLink to="/" >
+            [Головна]
         </NavLink>
         <NavLink to="/events" activeStyle={selectedStyle}>
-            [Events]
+            [Події]
         </NavLink>
         <NavLink to="/products" activeStyle={selectedStyle}>
-            [Products]
+            [Продукти]
         </NavLink>
         <NavLink to="/about" activeStyle={selectedStyle}>
-            [About]
+            [Про нас]
         </NavLink>
         <NavLink to="/contact" activeStyle={selectedStyle}>
-            [Contact Us]
+            [Контакти]
         </NavLink>
     </nav>
 

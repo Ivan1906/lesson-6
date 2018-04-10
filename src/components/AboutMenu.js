@@ -9,23 +9,23 @@ const selectedStyle = {
 const AboutMenu = ({match}) =>
     <div className="about-menu">
         <li>
-            <NavLink to="/about" style={match.isExact && selectedStyle}>
-                [Company]
+            <NavLink to="/about" >
+                [Компанії підрядники]
             </NavLink>
         </li>
         <li>
             <NavLink to="/about/history" activeStyle={selectedStyle}>
-                [History]
+                [Історія]
             </NavLink>
         </li>
         <li>
             <NavLink to="/about/services" activeStyle={selectedStyle}>
-                [Services]
+                [Сервіси]
             </NavLink>
         </li>
         <li>
             <NavLink to="/about/location" activeStyle={selectedStyle}>
-                [Location]
+                [Розташування]
             </NavLink>
         </li>
     </div>

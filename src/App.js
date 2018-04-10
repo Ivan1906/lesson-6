@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
-import { HashRouter, Route, Switch } from 'react-router-dom';
-import { Home, About, Events, Products, Contact, Whoops404 } from './components/pages';
+import { Route, Switch, BrowserRouter } from 'react-router-dom';
+import { Home, About, Events, Products, Contact } from './components/pages';
+import Error404 from './components/Pages/Error/Error404';
 import './App.css';
 
 class App extends Component {
   render() {
     return (
-      <HashRouter>
+      <BrowserRouter>
         <div className="main">
           <Switch>
             <Route exact path="/" component={Home} />
@@ -14,10 +15,10 @@ class App extends Component {
             <Route path="/events" component={Events} />
             <Route path="/products" component={Products} />
             <Route path="/contact" component={Contact} />
-            <Route component={Whoops404} />
+            <Route component={Error404} />
           </Switch>
         </div>
-      </HashRouter>
+      </BrowserRouter>
     );
   }
 }

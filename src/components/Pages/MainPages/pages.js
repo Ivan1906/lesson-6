@@ -7,55 +7,47 @@ import Locations from './Pages/About/Locations';
 import HistoryStory from './Pages/About/HistoryStory';
 import Company from './Pages/About/Company';
 import Services from './Pages/About/Services';
-
-//let { Company, HistoryStory, Services, Locations } = ALL_ABOUT;
-//console.log({ALL_ABOUT});
+import Error404 from './Pages/Error/Error404';
 
 export const Home = () =>
     <PageTemplate>
         <section className="home">
-            <div className="home">
-                <h1>[Home]</h1>
-            </div>
+            <h1>Головна сторінка</h1>
         </section>
     </PageTemplate>
 
 export const Events = () =>
     <PageTemplate>
         <section className="events">
-            <h1>[Event Calendar]</h1>
+            <h1>Календар подій</h1>
         </section>
     </PageTemplate>
 
 export const Products = () =>
     <PageTemplate>
         <section className="products">
-            <h1>[Product Catalog]</h1>
+            <h1>Категорії продуктів</h1>
         </section>
     </PageTemplate>
 
 export const Contact = () =>
     <PageTemplate>
         <section className="contact">
-            <h1>[Contact Us]</h1>
+            <h1>Контакти</h1>
         </section>
     </PageTemplate>
 
 export const About = ({ match }) =>
     <PageTemplate>
         <section className="about">
-            <h1>About</h1>
-                <Switch>
-                    <Route component={AboutMenu} />
-                    <Route exact path="/about" component={Company}/>
-                    <Route path="/about/history" component={HistoryStory}/>
-                    <Route path="/about/services" component={Services}/>
-                    <Route path="/about/location" component={Locations}/>
-                </Switch>
+            <h1>Про нас</h1>
+            <AboutMenu/>
+            <Switch>
+                <Route exact path="/about" component={Company}/>
+                <Route path="/about/history" component={HistoryStory}/>
+                <Route path="/about/services" component={Services}/>
+                <Route path="/about/location" component={Locations}/>
+                <Route component={Error404} />
+            </Switch>
         </section>
-    </PageTemplate>
-
-export const Whoops404 = ({ location }) =>
-    <div className="whoops-404">
-        <h1>Resource not found at '{location.pathname}'</h1>
-    </div>    
+    </PageTemplate>  
