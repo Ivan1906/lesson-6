@@ -9,19 +9,19 @@ const selectedStyle = {
 const MainMenu = () =>
     <nav className="main-menu">
         <NavLink to="/" >
-            [Головна]
+            Головна
         </NavLink>
         <NavLink to="/events" activeStyle={selectedStyle}>
-            [Події]
+            Події
         </NavLink>
         <NavLink to="/products" activeStyle={selectedStyle}>
-            [Продукти]
+            Продукти
         </NavLink>
         <NavLink to="/about" activeStyle={selectedStyle}>
-            [Про нас]
+            Про нас
         </NavLink>
         <NavLink to="/contact" activeStyle={selectedStyle}>
-            [Контакти]
+            Форма запитів
         </NavLink>
     </nav>
 

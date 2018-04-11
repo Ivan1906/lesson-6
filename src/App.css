@@ -1,0 +1,19 @@
+nav.main-menu {
+    margin-bottom: 50px;
+}
+
+nav.main-menu > a {
+    margin: 0 10px;
+    border: 3px double blue;
+}
+
+.about-menu > li {
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid black;
+}

@@ -2,30 +2,30 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 const selectedStyle = {
-    backgroundColor: "green",
-    color: "slategray"
+    backgroundColor: "yellow",
+    color: "red"
 }
 
 const AboutMenu = () =>
     <div className="about-menu">
         <li>
             <NavLink to="/about" >
-                [Загальні відомості]
+                Загальні відомості
             </NavLink>
         </li>
         <li>
             <NavLink to="/about/history" activeStyle={selectedStyle}>
-                [Історія]
+                Історія
             </NavLink>
         </li>
         <li>
             <NavLink to="/about/address" activeStyle={selectedStyle}>
-                [Адрес]
+                Адрес
             </NavLink>
         </li>
         <li>
             <NavLink to="/about/tranding" activeStyle={selectedStyle}>
-                [Торговельні партнери]
+                Торговельні партнери
             </NavLink>
         </li>
     </div>
