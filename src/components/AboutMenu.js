@@ -6,11 +6,11 @@ const selectedStyle = {
     color: "slategray"
 }
 
-const AboutMenu = ({match}) =>
+const AboutMenu = () =>
     <div className="about-menu">
         <li>
             <NavLink to="/about" >
-                [Компанії підрядники]
+                [Загальні відомості]
             </NavLink>
         </li>
         <li>
@@ -19,13 +19,13 @@ const AboutMenu = ({match}) =>
             </NavLink>
         </li>
         <li>
-            <NavLink to="/about/services" activeStyle={selectedStyle}>
-                [Сервіси]
+            <NavLink to="/about/address" activeStyle={selectedStyle}>
+                [Адрес]
             </NavLink>
         </li>
         <li>
-            <NavLink to="/about/location" activeStyle={selectedStyle}>
-                [Розташування]
+            <NavLink to="/about/tranding" activeStyle={selectedStyle}>
+                [Торговельні партнери]
             </NavLink>
         </li>
     </div>

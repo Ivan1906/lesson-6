@@ -1,9 +1,9 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom'
-import PageTemplate from './PageTemplate';
-import AboutMenu from './AboutMenu';
+import PageTemplate from '../PageTemplate';
+import AboutMenu from '../../AboutMenu';
 
-
+import { Company, AddressCompany, HistoryCompany, TradingPartnersCompany } from '../About/about';
 import Error404 from '../Error/Error404';
 
 export const Home = () =>
@@ -38,12 +38,12 @@ export const About = ({ match }) =>
     <PageTemplate>
         <section className="about">
             <h1>Про нас</h1>
-            <AboutMenu/>
+            <AboutMenu />
             <Switch>
                 <Route exact path="/about" component={Company}/>
-                <Route path="/about/history" component={HistoryStory}/>
-                <Route path="/about/services" component={Services}/>
-                <Route path="/about/location" component={Locations}/>
+                <Route path="/about/history" component={HistoryCompany}/>
+                <Route path="/about/address" component={AddressCompany}/>
+                <Route path="/about/tranding" component={TradingPartnersCompany}/>
                 <Route component={Error404} />
             </Switch>
         </section>

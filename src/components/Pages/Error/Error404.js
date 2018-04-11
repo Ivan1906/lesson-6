@@ -1,11 +1,8 @@
 import React from 'react';
-import PageTemplate from '../';
 
-const HistoryStory = ({location}) =>
-    <PageTemplate>
-        <div className="error-404">
-            <h1>Ресурс за '{location.pathname}' не знайдений!!!</h1>
-        </div>
-    </PageTemplate>
+const Error404 = ({location}) =>
+    <div className="error-404">
+        <h1>Ресурс за '{location.pathname}' не знайдений!!!</h1>
+    </div>
 
-export default HistoryStory; 
+export default Error404; 

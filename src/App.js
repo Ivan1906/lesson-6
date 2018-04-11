@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { Route, Switch, BrowserRouter } from 'react-router-dom';
-import { Home, About, Events, Products, Contact } from './components/pages';
+import { Home, About, Events, Products, Contact } from './components/Pages/MainPages/pages';
 import Error404 from './components/Pages/Error/Error404';
+import PageTemplate from './components/Pages/PageTemplate';
 import './App.css';
 
 class App extends Component {
@@ -15,7 +16,9 @@ class App extends Component {
             <Route path="/events" component={Events} />
             <Route path="/products" component={Products} />
             <Route path="/contact" component={Contact} />
-            <Route component={Error404} />
+            <PageTemplate>
+              <Route component={Error404} />
+            </PageTemplate>
           </Switch>
         </div>
       </BrowserRouter>
