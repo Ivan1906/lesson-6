@@ -3,11 +3,8 @@ import { Route, Switch } from 'react-router-dom'
 import PageTemplate from './PageTemplate';
 import AboutMenu from './AboutMenu';
 
-import Locations from './Pages/About/Locations';
-import HistoryStory from './Pages/About/HistoryStory';
-import Company from './Pages/About/Company';
-import Services from './Pages/About/Services';
-import Error404 from './Pages/Error/Error404';
+
+import Error404 from '../Error/Error404';
 
 export const Home = () =>
     <PageTemplate>
